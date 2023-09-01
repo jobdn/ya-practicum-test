@@ -4,7 +4,7 @@ import { Header } from "../Header";
 export const Layout = () => {
   return (
     <div>
-      <Header className="header" />
+      <Header />
       <section className="page-content">
         <Outlet />
       </section>

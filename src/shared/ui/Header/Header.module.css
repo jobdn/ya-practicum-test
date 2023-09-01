@@ -2,6 +2,8 @@
   padding: 26px 50px;
   display: flex;
   align-items: center;
+  height: var(--header-height);
+  max-width: 1300px;
 }
 
 .menu {
@@ -9,10 +11,9 @@
 }
 
 .menuItem {
-  padding: 20px 0;
   margin-right: 40px;
+  display: inline-block;
 }
-
 .menuItem:last-child {
   margin-right: 0;
 }

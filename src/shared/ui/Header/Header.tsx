@@ -5,7 +5,7 @@ import styles from "./Header.module.css";
 import Logo from "./assets/logo.png";
 
 type Props = {
-  className: string;
+  className?: string;
 };
 
 export const Header = (props: Props) => {
@@ -18,12 +18,12 @@ export const Header = (props: Props) => {
       </Link>
       <nav className={styles.menu}>
         <ul>
-          <Link to={"/"} className={styles.menuItem}>
-            Домой
-          </Link>
-          <Link to={"/js"} className={styles.menuItem}>
-            Сила JS
-          </Link>
+          <li className={styles.menuItem}>
+            <Link to="/">Домой</Link>
+          </li>
+          <li className={styles.menuItem}>
+            <Link to="/js">Сила JS</Link>
+          </li>
         </ul>
       </nav>
     </header>

@@ -22,3 +22,7 @@ a {
 a:hover {
   color: var(--blue);
 }
+
+li {
+  list-style: none;
+}
