@@ -14,4 +14,11 @@ a {
   text-decoration: none;
   line-height: 27px;
   font-size: 17px;
+  display: inline-block;
+
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--blue);
 }
