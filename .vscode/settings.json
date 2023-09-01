@@ -1,0 +1,48 @@
+{
+  "folderTemplates.structures": [
+    {
+      "name": "ui-segment",
+      "structure": [
+        {
+          "fileName": "[FTName%capitalize].tsx",
+          "template": "comp"
+        },
+        {
+          "fileName": "index.ts",
+          "template": "public-api"
+        }
+      ]
+    },
+    {
+      "name": "fsd-slice",
+      "structure": [
+        {
+          "fileName": "ui/[FTName%capitalize].tsx",
+          "template": "comp"
+        },
+        {
+          "fileName": "index.ts",
+          "template": "public-api"
+        }
+      ]
+    }
+  ],
+  "folderTemplates.fileTemplates": {
+    "comp": [
+      "interface [FTName%capitalize]Props {",
+      "  className?: string;",
+      "}",
+      "",
+      "export const [FTName%capitalize] = (props: [FTName%capitalize]Props) => {",
+      "",
+      "  const { className } = props;",
+      "  return (",
+      "    <div className={className}></div>",
+      "  )",
+      "}"
+    ],
+    "public-api": [
+      "export { [FTName%capitalize] } from \"./ui/[FTName%capitalize]\";"
+    ]
+  }
+}
