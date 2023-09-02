@@ -1,8 +1,9 @@
-interface InterestingJsPageProps {
-  className?: string;
-}
+import { ColorChanger } from "../../../widgets/ColorChanger";
 
-export const InterestingJsPage = (props: InterestingJsPageProps) => {
-  const { className } = props;
-  return <div className={className}></div>;
+export const InterestingJsPage = () => {
+  return (
+    <>
+      <ColorChanger />
+    </>
+  );
 };
