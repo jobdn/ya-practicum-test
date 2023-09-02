@@ -1,11 +1,13 @@
 import styles from "./HomePage.module.css";
-import { LikeProgrammingSection } from "./LikeProgrammingSection";
+import { LikeProgrammingSection } from "./LikeProgramming/LikeProgrammingSection";
 
 import SelfiSrc from "../assets/selfi.jpeg";
 import SchoolPhotoSrc from "../assets/school-photo.jpeg";
+import TutorialVideo from "../assets/ya-practicum.mp4";
 
 // TODO: add aliases
 import { PhotoWithDescription } from "../../../widgets/PhotoWithDescription";
+import { VideoPlayer } from "../../../shared/ui/VideoPlayer";
 
 export const HomePage = () => {
   return (
@@ -24,6 +26,14 @@ export const HomePage = () => {
         imgAlt="Школьное фото"
       />
       <LikeProgrammingSection />
+
+      <h2>Скринкаст</h2>
+      <VideoPlayer
+        className={styles.video}
+        src={TutorialVideo}
+        width="100%"
+        controls
+      />
     </>
   );
 };
