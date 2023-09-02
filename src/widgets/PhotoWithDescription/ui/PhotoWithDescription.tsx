@@ -12,7 +12,7 @@ interface PhotoWithDescriptionProps {
 export const PhotoWithDescription = (props: PhotoWithDescriptionProps) => {
   const { className, imgSrc, imgAlt, text, reverse } = props;
   return (
-    <div
+    <section
       className={clsx(
         styles.photoDescContainer,
         reverse && styles.photoDescContainer_reverse,
@@ -25,10 +25,10 @@ export const PhotoWithDescription = (props: PhotoWithDescriptionProps) => {
           reverse && styles.imgWrapper_reverse
         )}
       >
-        <img className={styles.img} src={imgSrc} alt={imgAlt} />
+        <img className={styles.img} width={400} src={imgSrc} alt={imgAlt} />
       </div>
 
-      <p className={styles.text}>{text}</p>
-    </div>
+      <p className={styles.desc}>{text}</p>
+    </section>
   );
 };

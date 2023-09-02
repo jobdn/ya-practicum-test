@@ -1,4 +1,5 @@
 import styles from "./HomePage.module.css";
+import { LikeProgrammingSection } from "./LikeProgrammingSection";
 
 import SelfiSrc from "../assets/selfi.jpeg";
 import SchoolPhotoSrc from "../assets/school-photo.jpeg";
@@ -22,6 +23,7 @@ export const HomePage = () => {
         className={styles.photoSection}
         imgAlt="Школьное фото"
       />
+      <LikeProgrammingSection />
     </>
   );
 };

@@ -5,9 +5,9 @@ export const Layout = () => {
   return (
     <div>
       <Header />
-      <section className="page-content">
+      <main className="page-content">
         <Outlet />
-      </section>
+      </main>
     </div>
   );
 };

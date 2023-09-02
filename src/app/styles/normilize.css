@@ -30,3 +30,28 @@ li {
 img {
   width: 100%;
 }
+
+h2 {
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+
+  font-size: 37px;
+  line-height: 50.4px;
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 54px;
+    line-height: 70.4px;
+    letter-spacing: 2.56px;
+  }
+}
+
+p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+}

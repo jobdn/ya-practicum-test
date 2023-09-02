@@ -13,6 +13,8 @@
   border-radius: 12px;
   position: relative;
   max-width: 400px;
+  min-width: 300px;
+  min-height: 500px;
 }
 
 .imgWrapper::before {
@@ -33,9 +35,9 @@
   object-fit: contain;
 }
 
-.text {
+.desc {
   color: #fff;
-  font-size: 30px;
+  font-size: 24px;
   letter-spacing: 3.2px;
 }
 
@@ -53,7 +55,7 @@
     order: 2;
   }
 
-  .text {
+  .desc {
     font-size: 70px;
     line-height: 88px;
     max-width: 630px;
